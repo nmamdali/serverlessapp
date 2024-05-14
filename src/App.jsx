@@ -34,7 +34,7 @@ function App() {
     };
 
     // Replace fetch endpoint with your actual API gateway endpoint
-    fetch("AWS_API_GATEWAY_ENDPOINT", requestOptions)
+    fetch("https://jgrvlx5ppa.execute-api.eu-north-1.amazonaws.com/Dev", requestOptions)
       .then((response) => response.text())
       .then((result) => alert(JSON.parse(result).message))
       .catch((error) => alert(`error -  ${error}`));
